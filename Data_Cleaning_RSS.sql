@@ -1,3 +1,6 @@
+-- Project in bigQuery 
+-- Dataset https://www.kaggle.com/datasets/ahmedmohamed2003/retail-store-sales-dirty-for-data-cleaning
+
 SELECT distinct *  FROM `david-448511.RSS.RSS` ; -- No Duplicates
 
 Select distinct Location
