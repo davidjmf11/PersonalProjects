@@ -87,7 +87,8 @@ The results from this query will be analyze in the dashboard created in the next
 
 # Relevant Visualizations and Insights
 
-![image](https://github.com/user-attachments/assets/faec7a1a-28f2-4112-a73a-651412857bf4)
+![image](https://github.com/user-attachments/assets/e12f2535-2e22-4968-b353-56745e697770)
+
 
 It's possible to use the dashboard in the following link:
 https://lookerstudio.google.com/reporting/115982a4-9468-4f60-b959-e77ce16362ee
