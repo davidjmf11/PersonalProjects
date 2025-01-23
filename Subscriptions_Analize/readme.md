@@ -19,8 +19,22 @@ Both analyses returned zero results, indicating no duplicates or missing data.
 ### Total Monthly Revenue = 0$
   This analysis focused on identifying cases where subscriptions had a quantity of 1. To achieve this, a temporary table was first created to isolate data for the relevant months. Subsequently, the second part of the query retrieved all subscriptions during those specific months.
 With this, it is possible to understand if there are errors in the data or inconsistencies.
+
 ![image](https://github.com/user-attachments/assets/e324fb18-4f3d-4ced-9792-468deb0d689f)
 
 ### Average Monthly Revenue under 3$
   Reviewing a sample of 100 rows revealed several subscriptions with notably low unit amounts, prompting an investigation into how many months had an average subtotal per quantity below $3. Typically, subscription fees end at .99 cents, reflecting standard pricing strategies. However, exceptions to this pattern stood out, raising questions about possible pricing inconsistencies or unique cases such as promotional offers.
+  
   ![image](https://github.com/user-attachments/assets/7c5c7add-70f8-4e9a-8859-6be8d7ca3985)
+
+### Results 
+In both analyses 1 and 2, certain rows stood out as potential outliers. Specifically, unit costs ranging between $0 and $3 are unusual for this type of subscription. However, the majority of these cases occurred in the earlier years. Given this observation, and in the absence of a dataset dictionary, it was inferred that these subscriptions might represent trials or another specific category.
+In the third analysis, there was a name that caught attention, ‘testdelayedcharge’. Since it has only one observation it will not be considered relevant.
+After careful consideration, it was decided not to remove any rows from the original dataset to preserve the integrity of the analysis.
+
+For this table, the subscription creation date was used to attribute the total revenue generated for that month, along with the total count of subscriptions created during the same period.
+These were the columns used because it was assumed that the monthly subscriptions sales figures are the new subscriptions made in each month and for the total revenue the subtotal that was charged in the same period. This way we can see the number of new subscriptions and the new revenue generated with them.
+
+It is possible to see the complete table in the folder
+
+![image](https://github.com/user-attachments/assets/e8353183-a629-4825-bf19-cc2aa22b861e)
