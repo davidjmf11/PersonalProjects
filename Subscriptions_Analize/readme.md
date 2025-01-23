@@ -8,7 +8,7 @@ The project deliverables include:
 This structured approach will ensure clarity, accuracy, and actionable results, showcasing critical thinking, data-handling skills, and alignment with Nexar’s culture of data-driven decision-making.
 
 ## Data Analysis.sql 
-- Duplicates and missing Data
+### Duplicates and missing Data
 The initial step in analyzing the data was to check for duplicate values. Since the ID column serves as the dataset's primary key, it was selected to ensure no duplicate rows were present.
 The second step was to ensure that the columns required for the final table had all the values needed.
 Both analyses returned zero results, indicating no duplicates or missing data.
@@ -16,11 +16,11 @@ Both analyses returned zero results, indicating no duplicates or missing data.
 ![image](https://github.com/user-attachments/assets/74763ca4-4028-473c-a2d4-fa2d3e55a6ed)
 
 
-- Total Monthly Revenue = 0$
+### Total Monthly Revenue = 0$
   This analysis focused on identifying cases where subscriptions had a quantity of 1. To achieve this, a temporary table was first created to isolate data for the relevant months. Subsequently, the second part of the query retrieved all subscriptions during those specific months.
 With this, it is possible to understand if there are errors in the data or inconsistencies.
 ![image](https://github.com/user-attachments/assets/e324fb18-4f3d-4ced-9792-468deb0d689f)
 
-- Average Monthly Revenue under 3$
+### Average Monthly Revenue under 3$
   Reviewing a sample of 100 rows revealed several subscriptions with notably low unit amounts, prompting an investigation into how many months had an average subtotal per quantity below $3. Typically, subscription fees end at .99 cents, reflecting standard pricing strategies. However, exceptions to this pattern stood out, raising questions about possible pricing inconsistencies or unique cases such as promotional offers.
   ![image](https://github.com/user-attachments/assets/7c5c7add-70f8-4e9a-8859-6be8d7ca3985)
